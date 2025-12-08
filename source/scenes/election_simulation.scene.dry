@@ -236,10 +236,7 @@ Q.national_coalition = Q.usp_r + Q.nfp_r;
 Q.far_right_coalition = Q.usp_r + Q.nfp_r;
 Q.left_coalition = Q.cps_r + Q.wpb_r + Q.ind_r;
 // this is an absurd concept lol
-Q.united_front_coalition = Q.pjfp_r + Q.kpd_r + Q.z_r + Q.ddp_r - 3;
-Q.anti_democratic_coalition = Q.kpd_r + Q.nsdap_r;
-// aka everyone except nazi, kpd, dnvp
-Q.neo_weimar_coalition = Q.pjfp_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
+Q.usp_government = Q.usp_r;
 !}
 
 The electoral system is essentially proportional, with the proportion of Reichstag seats roughly equal to the proportion of votes.
@@ -266,6 +263,8 @@ Independents: [+ ind_r +]
 
 
 **Potential coalitions:**
+USP government (USP): [usp_government]
+
 Grand Coalition (PFJP + WPB + CPS + Independents): [+ grand_coalition +]
 
 National Coalition (USP + NFP): [+ national_coalition +]
