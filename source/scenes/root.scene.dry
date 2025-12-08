@@ -35,6 +35,25 @@ Q.old_demographics = 0;
 // TODO: not yet implemented
 Q.use_decimals = 0;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // party resources
 Q.resources = 2;
 // party dues
@@ -64,6 +83,11 @@ Q.unions_independent = 0;
 Q.centrists_resign = 0;
 Q.left_split = 0;
 Q.reformists_resigned = 0;
+
+
+Q.frankfurt_negotiations = 0
+
+
 
 // have we discovered neorevisionism?
 Q.neorevisionism = 0;
@@ -109,10 +133,10 @@ Q.dvp_relation = 35;
 Q.DNVP_relation = 10;
 Q.NSDAP_relation = 0;
 
-Q.kpd_leader = "Thälmann";
+Q.kpd_leader = "Th채lmann";
 // alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
+Q.kpd_party_leader = "Th채lmann";
+Q.z_leader = "Br체ning";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
 Q.z_party_leader = "Marx";
 Q.nsdap_leader = "Hitler";
@@ -124,13 +148,13 @@ Q.hindenburg_enabled = 0;
 
 
 // Does the SPD lead in Prussia?
-Q.spd_prussia = 1;
+Q.pjfp_prussia = 1;
 // Options: spd, z, dnvp, papen, nsdap
-Q.prussian_government = "SPD";
+Q.prussian_government = "PJFP";
 
 // The array of forces - paramilitary groups
 // Number of members in 1928 (in thousands)
-// Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
+// Reichsbanner, stahlhelm, SA, rotfrontk채mpferbund
 Q.rb_strength = 2000;
 Q.rb_militancy = 0.01;
 Q.women_in_rb = 0;
@@ -228,14 +252,14 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['pjfp', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 60;
+Q.workers_pjfp = 60;
 Q.workers_kpd = 20;
 Q.workers_z = 5;
 Q.workers_ddp = 0;
@@ -244,7 +268,7 @@ Q.workers_dnvp = 5;
 Q.workers_nsdap = 0;
 Q.workers_other = 10;
 
-Q.old_middle_spd = 5;
+Q.old_middle_pjfp = 5;
 Q.old_middle_kpd = 0;
 Q.old_middle_z = 5;
 Q.old_middle_ddp= 10;
@@ -253,7 +277,7 @@ Q.old_middle_dnvp = 25;
 Q.old_middle_nsdap = 10;
 Q.old_middle_other = 10;
 
-Q.new_middle_spd = 5;
+Q.new_middle_pjfp = 5;
 Q.new_middle_kpd = 1;
 Q.new_middle_z = 10;
 Q.new_middle_ddp= 25;
@@ -262,7 +286,7 @@ Q.new_middle_dnvp = 10;
 Q.new_middle_nsdap = 5;
 Q.new_middle_other = 15;
 
-Q.rural_spd = 10;
+Q.rural_pjfp = 10;
 Q.rural_kpd = 0;
 Q.rural_z = 5;
 Q.rural_ddp= 5;
@@ -271,7 +295,7 @@ Q.rural_dnvp = 45;
 Q.rural_nsdap = 5;
 Q.rural_other = 10;
 
-Q.unemployed_spd = 25;
+Q.unemployed_pjfp= 25;
 Q.unemployed_kpd = 55;
 Q.unemployed_z = 1;
 Q.unemployed_ddp = 0;
@@ -280,7 +304,7 @@ Q.unemployed_dnvp = 5;
 Q.unemployed_nsdap = 15;
 Q.unemployed_other = 9;
 
-Q.catholics_spd = 15;
+Q.catholics_pjfp = 15;
 Q.catholics_kpd = 2;
 Q.catholics_z = 50;
 Q.catholics_ddp = 0;
@@ -296,7 +320,7 @@ Q.catholics_other = 12;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.spd_r = 26;
+Q.pjfp_r = 26;
 Q.kpd_r = 9;
 Q.z_r = 17;
 Q.ddp_r = 6;
@@ -306,7 +330,7 @@ Q.nsdap_r = 3;
 Q.other_r = 9;
 
 // diff from prev
-Q.old_spd_r = 26;
+Q.old_pjfp_r = 26;
 Q.old_kpd_r = 9;
 Q.old_z_r = 17;
 Q.old_ddp_r = 6;
@@ -335,7 +359,7 @@ Q.president = "Hindenburg";
 // starting chancellor: Wilhelm Marx
 Q.chancellor = "Marx";
 Q.chancellor_party = 'Z';
-Q.spd_in_government = 0;
+Q.pjfp_in_government = 0;
 Q.z_in_government = 1;
 Q.ddp_in_government = 0;
 Q.dvp_in_government = 1;
@@ -367,7 +391,7 @@ Q.coalition_dissent = 0;
 Q.kpd_coalition_dissent = 0;
 
 // does the SPD tolerate the government even if it is not a participant?
-Q.spd_toleration = 0;
+Q.pjfp_toleration = 0;
 
 // is the current government a presidential minority government?
 Q.minority_government = 0;
@@ -387,7 +411,7 @@ Q.reichswehr_minister = 'Groener';
 Q.reichswehr_minister_party = 'I';
 Q.economic_minister = 'Curtius';
 Q.economic_minister_party = 'DVP';
-Q.finance_minister = 'Köhler';
+Q.finance_minister = 'K철hler';
 Q.finance_minister_party = 'Z';
 Q.agriculture_minister = 'Schiele';
 Q.agriculture_minister_party = 'DNVP';
@@ -450,12 +474,12 @@ Q.electoral_threshold = 0;
 
 // our conduct in the government, and the conduct of our coalition opponents.
 // did the SPD vote against the previous government in a vote of no confidence?
-Q.spd_no_confidence = 0;
+Q.pjfp_no_confidence = 0;
 // was the last SPD government taken down in a vote of no confidence by right-wing coalition partners?
-Q.no_confidence_against_spd = 0;
+Q.no_confidence_against_pjfp = 0;
 
 // Advisors/Leaders
-Q.n_advisors = 3;
+Q.n_advisors = 4;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
@@ -536,7 +560,7 @@ Q.march_on_berlin_timer = 0;
 
 // all the initial advisors are centrists.
 Q.wels_advisor = 1; // Otto Wels
-Q.muller_advisor = 1; // Hermann Müller
+Q.muller_advisor = 1; // Hermann M체ller
 Q.muller_dead = 0;
 // okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
 Q.crispien_advisor = 0; // Arthur Crispien
@@ -550,7 +574,7 @@ Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
 Q.seydewitz_advisor = 0; // Max Seydewitz
 
 // centrist alternate advisors
-Q.pfulf_advisor = 0; // Antonie Pfülf
+Q.pfulf_advisor = 0; // Antonie Pf체lf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
 // Reformist advisors
@@ -558,10 +582,14 @@ Q.severing_advisor = 0; // Carl Severing
 Q.braun_advisor = 0; // Otto Braun
 Q.juchacz_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
+Q.ricter_advisor = 1; // Frens Ricter
+
+
+
 
 // Labor advisors
 Q.leipart_advisor = 0; // Theodor Leipart
-Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
+Q.aufhauser_advisor = 0; // Siegfried Aufh채user
 Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
 Q.wissell_advisor = 0; // Rudolf Wissell
 
@@ -630,5 +658,3 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
 
 Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
-
-
