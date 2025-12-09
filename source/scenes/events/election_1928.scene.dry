@@ -204,7 +204,7 @@ data = data.concat([
         "id": "nfp",
         "legend": "NFP",
         "name": "NFP",
-        "seats": Math.round((Q.nfp_r - 3)*5),
+        "seats": Math.round(Q.nfp_r*5),
     },
     {
         "id": "pfjp",
@@ -271,7 +271,6 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#DCCA4A'> </div> !} WPB: {!</td><td>!} [+ wpb_r +]% {!</td><td>!} [+ str_change_wpb +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Independents: {!</td><td>!} [+ ind_r +]% {!</td><td>!} [+ str_change_ind +] {!</td></tr>!}
-
 {!</table>!}
 
 **Potential coalitions:**
