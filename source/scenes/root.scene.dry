@@ -40,6 +40,12 @@ Q.resources = 2;
 // party dues
 Q.dues = 2;
 
+
+// Who leads the PFJP?
+frens_pfjp_leader = 1
+manoly_pfjp_leader = 0
+sebastian_pfjp_leader = 0
+
 // the state of the party
 // overall dissent reduces every increase in party support.
 Q.dissent = 0.05;
