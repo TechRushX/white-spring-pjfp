@@ -170,16 +170,16 @@ Q.reichswehr_loyalty = 0.2;
 
 // popular opinion
 // national ideology - on a binary scale
-// nationalism vs internationalism or pacifism or non-nationalism
-Q.nationalism = 60;
+// support for bludish rights
+Q.bludish_rights = 37;
 // socialism vs capitalism
-Q.socialism = 40;
-// pro-republic vs anti-republic
-Q.pro_republic = 59;
+Q.socialism = 28;
+// how much does the public support the constitution of 1929?
+Q.pro_soll_constitution = 48;
 
 Q.emergency_rule = 0;
 
-// minimum percentage of votes to be represented in the Reichstag
+// minimum percentage of votes to be represented in the GNA
 Q.electoral_threshold = 10;
 // constitutional reform level
 Q.constitutional_reform = 0;
@@ -609,6 +609,6 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1928
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
+It is not a bright time for Sordish democracy. After Alphono's "reckless" privatization efforts, inflation is out of control, and the economy has shrunk significantly. Political extremism is on the rise, and the USP is expected to elect an autocratic candidate again. In foreign policy, Agnolia is demanding a reevaluation of our current trade agreement, Rumburg is heavily militarizing and funding the terrorist BFF, whilst the Heijiland conflict has the potential to erupt into a full-blown war. 
 
 Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
