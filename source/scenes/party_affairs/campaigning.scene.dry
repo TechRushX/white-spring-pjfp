@@ -35,6 +35,7 @@ unavailable-subtitle: Not enough resources.
 on-arrival: new_middle_pfjp += 6*(1-dissent); new_middle_pfjp -= 4 if manoly_pfjp_leader == 1; resources -= 1;
 
 We have increased our campaigning among the new middle class.
+
 @old_middle
 subtitle: -1 resources
 choose-if: resources >= 1
@@ -42,12 +43,14 @@ unavailable-subtitle: Not enough resources.
 on-arrival: old_middle_pfjp += 5*(1-dissent); resources -= 1; old_middle_pfjp -= 3 if bludish_support <= 51 and sebastian_pfjp_leader == 0
 
 We have increased our campaigning among the old middle class. [? if old_middle_pfjp <= 51 and sebastian_pfjp_leader == 0: The high levels of anti-bludish sentiment among this group make our campaign more difficult, as long as we support equal rights for them. ?]
+
+@rural
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: rural_pfjp += 5*(1-dissent); rural_pfjp -= 3*(1-dissent) if sebastian_pfjp_leader == 0; resources -= 1; rural_pfjp -= 1*(1-dissent) if sebastian_resigned == 1
 
-We have increased our campaigning among farmers. [? if sebastian_pfjp_leader == 0: Outside Sebastian, we have not historically campaigned much among the farmers, and they do not trust us. ?][? if sebastian_pfjp_leader = 1: With Sebastian at the head of the party, the rural folk finally trust us enough. ?][? if sebastian_resigned = 1: Epsecially since his resignation. They are now officially considered a lost cause electorally. ?]
+We have increased our campaigning among farmers. [? if sebastian_pfjp_leader == 0: Outside Sebastian, we have not historically campaigned much among the farmers, and they do not trust us. ?][? if sebastian_pfjp_leader == 1: With Sebastian at the head of the party, the rural folk finally trust us enough. ?][? if sebastian_resigned == 1: Epsecially since his resignation. They are now officially considered a lost cause electorally. ?]
 
 @unemployed
 subtitle: -1 resources
