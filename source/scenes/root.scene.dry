@@ -42,11 +42,11 @@ Q.dues = 2;
 
 
 // Who leads the PFJP?
-ricter_pfjp_leader = 1
-manoly_pfjp_leader = 0
-sebastian_pfjp_leader = 0
+Q.ricter_pfjp_leader = 1
+Q.manoly_pfjp_leader = 0
+Q.sebastian_pfjp_leader = 0
 
-sebastian_resigned = 0
+Q.sebastian_resigned = 0
 
 // the state of the party
 // overall dissent reduces every increase in party support.
