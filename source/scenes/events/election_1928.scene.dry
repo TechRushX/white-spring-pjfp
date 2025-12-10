@@ -260,7 +260,7 @@ go-to: coalition_menu
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#800080'> </div> !} USP: {!</td><td>!} [+ usp_minus_bvp_r +]% {!</td><td>!} [+ str_change_usp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#800080'> </div> !} USP: {!</td><td>!} [+ usp_r +]% {!</td><td>!} [+ str_change_usp +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#000000'> </div> !} NFP: {!</td><td>!} [+ nfp_r +]% {!</td><td>!} [+ str_change_nfp +] {!</td></tr>!}
 
