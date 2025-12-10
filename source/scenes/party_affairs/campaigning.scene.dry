@@ -26,7 +26,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: workers_pfjp += 6*(1-dissent); workers_pfjp -= 2 if unemployed >= 15; workers_pfjp -= 2 if ricter_pfjp_leader == 1; resources -= 1;
 
-We have increased our campaigning among the workers. [? if ricter_pfjp_leader > 0: They do not trust us as much ever since Ricter took over. ?]  [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?]
+We have increased our campaigning among the workers. [? if ricter_pfjp_leader == 1: They do not trust us as much ever since Ricter took over. ?]  [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?]
 
 @new_middle
 subtitle: -1 resources
