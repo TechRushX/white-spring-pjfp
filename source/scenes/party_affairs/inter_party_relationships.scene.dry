@@ -28,6 +28,7 @@ go-to: cps_1 if cps_hostility > 0; cps_2 if cps_hostility <= 0
 
 @cps_1
 on-arrival: cps_relation += 5*(1 - dissent); cps_hostility -= 1
+
 Relations between us and the communists are tense, ever since the shift of our party to the right and the subsequent departure of Stahler. However, we can still take efforts to reduce the level of hostility between us.
 
 @cps_2
