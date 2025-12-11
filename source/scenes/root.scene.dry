@@ -48,6 +48,12 @@ Q.sebastian_pfjp_leader = 0
 
 Q.sebastian_resigned = 0
 
+// How hostile the left is towards our party
+Q.cps_hostility = 2
+Q.wpb_hostility = 1
+Q.ind_hostility = 1
+
+
 // the state of the party
 // overall dissent reduces every increase in party support.
 Q.dissent = 0.05;
@@ -121,7 +127,7 @@ Q.kpd_leader = "Thalmann";
 Q.kpd_party_leader = "Thalmann";
 Q.z_leader = "Bruning";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
+Q.wpb_party_leader = "Fetih";
 Q.nsdap_leader = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
