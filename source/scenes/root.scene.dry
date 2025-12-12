@@ -53,6 +53,14 @@ Q.cps_hostility = 2
 Q.wpb_hostility = 1
 Q.ind_hostility = 1
 
+// corporate stuff
+Q.business_relations = 5
+Q.business_funding = 1
+Q.tusk_relation = 3
+Q.marcel_relation = 4
+
+
+
 
 // the state of the party
 // overall dissent reduces every increase in party support.
@@ -183,7 +191,7 @@ Q.bludish_rights = 37;
 // socialism vs capitalism
 Q.socialism = 28;
 // how much does the public support the constitution of 1929?
-Q.pro_soll_constitution = 48;
+Q.pro_soll_const = 48;
 
 Q.emergency_rule = 0;
 
