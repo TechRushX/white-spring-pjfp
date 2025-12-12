@@ -333,8 +333,8 @@ Q.chancellor_party = 'Z';
 Q.pfjp_in_government = 0;
 Q.usp_in_government = 1;
 Q.nfp_in_government = 0;
-Q.cps_in_government = 1;
-Q.wpb_in_government = 1;
+Q.cps_in_government = 0;
+Q.wpb_in_government = 0;
 Q.ind_in_government = 0;
 
 Q.in_right_coalition = 0;
@@ -432,7 +432,7 @@ Q.lower_tax_rates = 0;
 Q.upper_tax_rates = 0;
 Q.tariffs = 0;
 
-Q.electoral_threshold = 0;
+Q.electoral_threshold = 10;
 
 // our conduct in the government, and the conduct of our coalition opponents.
 // did the PFJP vote against the previous government in a vote of no confidence?
